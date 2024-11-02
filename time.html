@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udaipur Tour Guide</title>
+    <link rel="stylesheet" href="time.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Explore Udaipur: The City of Lakes</h1>
+        <nav>
+            <ul>
+                <li><a href="#description">About Udaipur</a></li>
+                <li><a href="#places">Places to Visit</a></li>
+                <li><a href="#package">Tour Packages</a></li>
+                <li><a href="#itinerary">Custom Itinerary</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Description Section -->
+    <section id="description">
+        <h2>About Udaipur</h2>
+        <p>Udaipur, known as the Venice of the East, is a beautiful city famous for its lakes, palaces, and heritage.</p>
+    </section>
+
+    <!-- Places Section -->
+    <section id="places">
+        <h2>Must-Visit Places</h2>
+        <div id="places-container">
+            <!-- JavaScript will dynamically load places information here -->
+        </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section id="package">
+        <h2>Packages</h2>
+        <p>Explore exclusive tour packages designed for a memorable Udaipur experience.</p>
+    </section>
+
+    <!-- Custom Itinerary Section -->
+    <section id="itinerary">
+        <h2>Customizable Itinerary</h2>
+        <form id="itineraryForm">
+            <label for="days">Days:</label>
+            <input type="number" id="days" name="days" required>
+            <label for="places">Select Places:</label>
+            <select id="placesDropdown" multiple>
+                <!-- JavaScript will populate places from the database -->
+            </select>
+            <button type="button" onclick="saveItinerary()">Save Itinerary</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@udaipurtours.com</p>
+    </section>
+
+    <script src="time.js"></script>
+</body>
+</html>
